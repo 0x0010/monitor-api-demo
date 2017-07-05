@@ -28,7 +28,7 @@ public class Application {
     public String index() {
       Monitor.idxTpsMark();
       try {
-        Thread.sleep(50);
+        Thread.sleep(5);
       } catch (InterruptedException ignore) {
 
       }
