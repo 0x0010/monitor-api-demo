@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="30" status="off">
+  <Appenders>
+    <!-- %5p [%t] %m (%F:%L)%n -->
+    <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout>
+        <pattern>
+          %d{MM/dd HH:mm:ss.SSS} %5p [%t] (%F:%L) %m %n
+        </pattern>
+      </PatternLayout>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Root level="debug">
+      <AppenderRef ref="console"/>
+    </Root>
+  </Loggers>
+
+</Configuration>
